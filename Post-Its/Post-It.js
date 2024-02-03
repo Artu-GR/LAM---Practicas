@@ -1,7 +1,7 @@
 const addBt = document.getElementById("add-button");
 const notes = document.getElementById("sticky-notes");
 const noteText = document.getElementById("text");
-const Note = document.getElementsByClassName("li");
+const Note = document.getElementsByClassName("li");//Lo iba a usar con el boton para editar al igual que la funcion editNote
 
 const colors = ["red", "yellow", "blue", "green", "orange", "turquoise"];
 
