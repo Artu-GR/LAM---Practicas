@@ -1,4 +1,5 @@
 const addBt = document.getElementById("add-button");
+const addBt2 = document.getElementById("agregar");
 const noteText = document.getElementById("text");
 const stickyNotes = document.getElementById("list");
 const newListDiv = document.querySelector(".newList");
@@ -37,3 +38,5 @@ div.addEventListener("click", (event) => {
     addStickyNote();
   }
 })
+
+addBt2.addEventListener('click', addStickyNote);
