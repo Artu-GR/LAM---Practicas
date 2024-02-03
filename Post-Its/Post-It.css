@@ -8,12 +8,25 @@
     flex-wrap: wrap;
 }
 
-.list{
+#list{
     float: left;
 }
 
 .button{
     margin-left: auto;
+    float:none;
+}
+
+#postIt{
+    width: 20vh;
+    height: 20vh;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    border: none;
+    border-radius: 10%;
 }
 
 #add-button{
@@ -22,13 +35,7 @@
     font-size: xx-large;
     width: 20vh;
     height: 20vh;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+    margin-left: 3vw;
 }
 
 #text{
@@ -38,27 +45,47 @@ ul{
     height: 12vh;
 }
 
-li {
-    float: left;
-    width: 20vh;
-    height: 20vh;
-    /*background-color: defined in js file;*/
-    text-align: center;
-    word-wrap: break-word;
-    word-break: break-all;
-    margin-left: 3vw;
-    margin-bottom: 3vw;
-}
-
-li:hover{
+#postIt:hover{
     opacity: 0.5;
     transition: 0.5s;
 }
 
 .newList{
-    position: inherit;
+    position: fixed;
     margin-top: 3vw;
-    bottom: 5vh;
-    width: 100%;
+    bottom: 30px;
     height: 10%;
+    left: 32%;
+}
+
+#agregar{
+    background-color: aqua;
+    color: black;
+    border-color: black;
+    font-size: medium;
+    padding: 10px;
+}
+
+@media (max-width: 721px){
+    .newList{
+        flex:auto;
+        position: inherit;
+        margin-top: 3vw;
+        bottom: 10px;
+        height: 10%;
+    }
+    #text{
+        background-color: white;
+        color: black;
+        width: 98%;
+        height: 12vh;
+    }
+    #agregar{
+        background-color: aqua;
+        color: black;
+        border-color: black;
+        font-size: medium;
+        padding: 5px;
+        width: 100%;
+    }
 }

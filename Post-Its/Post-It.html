@@ -13,29 +13,24 @@
 
 <body>
     <div class="elements">
-        <div class="list">
-            <ul id="sticky-notes">
-                <!--Se llenara de forma dinamica-->
-                <!--Iba a poner el boton como parte de la lista e ir anidando los post-it anterior al boton-->
-            </ul>
+        <div id="list">
+            <!--Se llenara de forma dinamica (divs con id = postIt)-->
+
+            <button id="add-button">+</button> <!--Se ira eliminando del div y se ira creando un nuevo boton al final de los postIt-->
         </div>
 
         <!--
             FALTA ARREGLAR EL BOTON *QUE APAREZCA SIEMPRE A LA DERECHA DEL ULTIMO POST IT
         -->
-        
-        <div class="button">
-            <button id="add-button">+</button>
-        </div>
     </div>
    
-    <div class="newList">
-        <hr>
-        <input type="text" id="text">
-        <button>Edit note</button> <!--No hace nada, es para que cuando de click a una nota cambie el campo de input a lo escrito en la nota y permita al usuario editar-->
-    </div>
-
 </body>
+
+<div class="newList">
+    <input type="text" id="text">
+    <button id="agregar">Agregar post-it</button>
+    <!--button>Edit note</button> <No hace nada, es para que cuando de click a una nota cambie el campo de input a lo escrito en la nota y permita al usuario editar-->
+</div>
 
 <script src="Post-It.js"></script>
 </html>
