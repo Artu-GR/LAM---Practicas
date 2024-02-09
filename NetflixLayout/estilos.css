@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+body{
+    background-color: black;
+}
+:root{
+     --gris:#323232;
+}
+input{
+   
+    width:100%!important; 
+    height: 46px;
+    background: var(--gris);
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: 0 none;
+}
+::placeholder{
+    color:rgb(194, 194, 194);
+    font-weight: bold;
+   
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.icon-search{
+    position: absolute;
+    width: 24px;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon-exit{
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    transform: translateY(30%);
+}
+.main{
+    position: relative;
+    min-height: 90vh;
+}
+.menu{
+    background: var(--gris);
+    width: 100%;
+    height: 58px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    justify-content: space-between;
+    
+}
+.menu i {
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+}
+.menu img{
+    width: 20px;
+}
+.other-img{
+    width: 15px!important;
+}
+
+.menu p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 8px; 
+    color: white;
+}
+.icon-container {
+    text-align: center;
+    margin-left: 5%;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#moviesSeries{
+    display:none;
+}
+
+#list{
+    margin-bottom: 55px;
+}
+
+.playButton{
+    background-color: none;
+    border:none;
+    width: 24px;
+    height: 24px;
+}
+
+.listElement{
+    width: 100%;
+    height: 83px;
+    background-color: rgba(32, 32, 32, 1);
+}
+
+#block{
+    display:flex;
+    margin-top: 2px;
+}
+
+.image{
+    background-color: white;
+    opacity: 0.12;
+    width: 128px;
+    height: 83px;
+}
+
+.name{
+    position: relative;
+    margin-top: 32px;
+    margin-left: 15px;
+    width: 50%;
+}
+
+.playButton{
+    margin-top: 25px;
+}
+
+@media(min-width: 550px){
+    .name, .playButton{
+        display:none
+    }
+    #block, .image{
+        width: 112px;
+        height: 166px;
+        background-color: rgba(196, 196, 196, 1);
+    }
+    .listElement{
+        width: 112px;
+        height: 166px;
+        display: inline-flex;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    #list{
+        float:left;
+        justify-self: stretch;
+    }
+    #moviesSeries{
+        display: flex;
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(50, 50, 50);
+        padding-left: 10px;
+    }
+    #popularSearch{
+        display:none;
+    }
+}
