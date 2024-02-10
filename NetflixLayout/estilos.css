@@ -99,6 +99,8 @@ input:focus{
 
 #list{
     margin-bottom: 55px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .playButton{
@@ -155,7 +157,8 @@ input:focus{
     }
     #list{
         float:left;
-        justify-self: stretch;
+        margin-left: 0;
+        margin-right: 0;
     }
     #moviesSeries{
         display: flex;
