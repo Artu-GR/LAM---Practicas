@@ -36,10 +36,10 @@ input:focus{
     display: inline-block;
 }
 .icon-search{
-    position: absolute;
+    position: fixed;
     width: 24px;
-    left: 15px; 
-    top: 50%;
+    left: 18px; 
+    top: 33px;
     transform: translateY(-50%);
 }
 .icon-exit{
@@ -132,12 +132,32 @@ input:focus{
     position: relative;
     margin-top: 32px;
     margin-left: 15px;
-    width: 50%;
 }
 
 .playButton{
     margin-top: 25px;
+    margin-left: 50%;
 }
+
+#recommendations{
+    list-style: none;
+    flex-direction: column;
+    background-color: var(--gris);
+    display: none;
+    margin-top: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    color: white;
+    font-size: medium;
+}
+
 
 @media(min-width: 550px){
     .name, .playButton{

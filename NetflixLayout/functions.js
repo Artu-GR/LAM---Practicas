@@ -1,4 +1,7 @@
 const list = document.getElementById("list");
+const inputText = document.getElementById("textInput");
+const recommendations = document.getElementById("recommendations");
+const topDiv = document.getElementById("firstDiv");
 
 function completeList(){
     let c = 40;
@@ -35,4 +38,15 @@ function completeList(){
     }
 }
 
+function displayRecommendations(){
+    recommendations.style.display = "flex";
+    if(inputText.value === "") clearRecommendations();
+}
+
+function clearRecommendations(){
+    recommendations.style.display = "none";
+}
+
 completeList();
+
+inputText.addEventListener('input', displayRecommendations);
